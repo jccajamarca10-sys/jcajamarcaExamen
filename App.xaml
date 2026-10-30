@@ -10,7 +10,7 @@
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
-            <!--ESTILOS GLOBALES: se pueden usar en cualquier vista con Style="{StaticResource ...}"-->
+            <!--ESTILOS GLOBALES: se pueden usar en cualquier vista con Style="{StaticResource ..}"-->
             <Style x:Key="estiloUsuarioConectado" TargetType="Label">
                 <Setter Property="TextColor" Value="DarkGreen" />
                 <Setter Property="FontSize" Value="14" />
