@@ -9,6 +9,40 @@
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
+
+            <!--ESTILOS GLOBALES: se pueden usar en cualquier vista con Style="{StaticResource ...}"-->
+            <Style x:Key="estiloUsuarioConectado" TargetType="Label">
+                <Setter Property="TextColor" Value="DarkGreen" />
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="FontAttributes" Value="Italic" />
+                <Setter Property="HorizontalOptions" Value="End" />
+            </Style>
+
+            <Style x:Key="estiloEtiqueta" TargetType="Label">
+                <Setter Property="TextColor" Value="#333333" />
+                <Setter Property="FontSize" Value="15" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+
+            <Style x:Key="estiloValor" TargetType="Label">
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="FontSize" Value="15" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+
+            <Style x:Key="estiloBotonPrincipal" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Purple" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="CornerRadius" Value="10" />
+            </Style>
+
+            <Style x:Key="estiloBotonSecundario" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#1565C0" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="CornerRadius" Value="10" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

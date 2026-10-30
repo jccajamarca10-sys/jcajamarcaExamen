@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="jcajamarcaExamen.Views.vLogin"
@@ -24,13 +24,15 @@
                   ColumnSpacing="10">
 
                 <Label Text="Usuario:"
-                       Grid.Row="0" Grid.Column="0" />
+                       Grid.Row="0" Grid.Column="0"
+                       Style="{StaticResource estiloEtiqueta}" />
                 <Entry x:Name="txtUsuario"
                        Grid.Row="0" Grid.Column="1"
                        Placeholder="Ingrese el usuario" />
 
                 <Label Text="Contraseña:"
-                       Grid.Row="1" Grid.Column="0" />
+                       Grid.Row="1" Grid.Column="0"
+                       Style="{StaticResource estiloEtiqueta}" />
                 <Entry x:Name="txtContrasena"
                        Grid.Row="1" Grid.Column="1"
                        Placeholder="Ingrese la contraseña"
@@ -39,11 +41,13 @@
                 <Button x:Name="btnIniciarSesion"
                         Grid.Row="2" Grid.Column="0"
                         Text="Iniciar sesión"
-                        Clicked="btnIniciarSesion_Clicked" />
+                        Clicked="btnIniciarSesion_Clicked"
+                        Style="{StaticResource estiloBotonPrincipal}" />
                 <Button x:Name="btnAcercaDe"
                         Grid.Row="2" Grid.Column="1"
                         Text="Acerca de"
-                        Clicked="btnAcercaDe_Clicked" />
+                        Clicked="btnAcercaDe_Clicked"
+                        Style="{StaticResource estiloBotonSecundario}" />
             </Grid>
 
         </VerticalStackLayout>

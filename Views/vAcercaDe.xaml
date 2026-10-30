@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="jcajamarcaExamen.Views.vAcercaDe"
@@ -17,31 +17,32 @@
                    HeightRequest="150"
                    HorizontalOptions="Center" />
 
-            <!--Grid 5 filas x 2 columnas: dato | valor-->
+            <!--Grid 5 filas x 2 columnas-->
             <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto"
                   ColumnDefinitions="Auto,*"
                   RowSpacing="12"
                   ColumnSpacing="15">
 
-                <Label Text="Docente:" Grid.Row="0" Grid.Column="0" FontAttributes="Bold" />
-                <Label Text="PhD. Renato Mauricio Toasa Guachi" Grid.Row="0" Grid.Column="1" />
+                <Label Text="Docente:" Grid.Row="0" Grid.Column="0" Style="{StaticResource estiloEtiqueta}" />
+                <Label Text="PhD. Renato Mauricio Toasa Guachi" Grid.Row="0" Grid.Column="1" Style="{StaticResource estiloValor}" />
 
-                <Label Text="Estudiante:" Grid.Row="1" Grid.Column="0" FontAttributes="Bold" />
-                <Label Text="Juan Cajamarca" Grid.Row="1" Grid.Column="1" />
+                <Label Text="Estudiante:" Grid.Row="1" Grid.Column="0" Style="{StaticResource estiloEtiqueta}" />
+                <Label Text="Juan Cajamarca" Grid.Row="1" Grid.Column="1" Style="{StaticResource estiloValor}" />
 
-                <Label Text="Asignatura:" Grid.Row="2" Grid.Column="0" FontAttributes="Bold" />
-                <Label Text="Desarrollo Para Aplicaciones Móviles" Grid.Row="2" Grid.Column="1" />
+                <Label Text="Asignatura:" Grid.Row="2" Grid.Column="0" Style="{StaticResource estiloEtiqueta}" />
+                <Label Text="Desarrollo Para Aplicaciones Móviles" Grid.Row="2" Grid.Column="1" Style="{StaticResource estiloValor}" />
 
-                <Label Text="Carrera:" Grid.Row="3" Grid.Column="0" FontAttributes="Bold" />
-                <Label Text="Ingeniería Informática" Grid.Row="3" Grid.Column="1" />
+                <Label Text="Carrera:" Grid.Row="3" Grid.Column="0" Style="{StaticResource estiloEtiqueta}" />
+                <Label Text="Ingeniería Informática" Grid.Row="3" Grid.Column="1" Style="{StaticResource estiloValor}" />
 
-                <Label Text="Paralelo:" Grid.Row="4" Grid.Column="0" FontAttributes="Bold" />
-                <Label Text="A" Grid.Row="4" Grid.Column="1" />
+                <Label Text="Paralelo:" Grid.Row="4" Grid.Column="0" Style="{StaticResource estiloEtiqueta}" />
+                <Label Text="A" Grid.Row="4" Grid.Column="1" Style="{StaticResource estiloValor}" />
             </Grid>
 
             <Button x:Name="btnRegresar"
                     Text="Regresar al Login"
-                    Clicked="btnRegresar_Clicked" />
+                    Clicked="btnRegresar_Clicked"
+                    Style="{StaticResource estiloBotonSecundario}" />
 
         </VerticalStackLayout>
     </ScrollView>

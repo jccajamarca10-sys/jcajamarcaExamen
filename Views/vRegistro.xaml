@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="jcajamarcaExamen.Views.vRegistro"
@@ -7,7 +7,7 @@
         <VerticalStackLayout Spacing="10"
                              Padding="20">
 
-            <Label x:Name="lblUsuarioConectado" />
+            <Label x:Name="lblUsuarioConectado" Style="{StaticResource estiloUsuarioConectado}" />
 
             <Label Text="REGISTRO"
                    TextColor="Blue"
@@ -19,9 +19,9 @@
                   ColumnDefinitions="*,*,*"
                   ColumnSpacing="8">
 
-                <Label Text="Nombre" Grid.Row="0" Grid.Column="0" />
-                <Label Text="Apellido" Grid.Row="0" Grid.Column="1" />
-                <Label Text="Edad" Grid.Row="0" Grid.Column="2" />
+                <Label Text="Nombre" Grid.Row="0" Grid.Column="0" Style="{StaticResource estiloEtiqueta}" />
+                <Label Text="Apellido" Grid.Row="0" Grid.Column="1" Style="{StaticResource estiloEtiqueta}" />
+                <Label Text="Edad" Grid.Row="0" Grid.Column="2" Style="{StaticResource estiloEtiqueta}" />
 
                 <Entry x:Name="txtNombre"
                        Grid.Row="1" Grid.Column="0"
@@ -44,12 +44,12 @@
                   RowSpacing="10"
                   ColumnSpacing="10">
 
-                <Label Text="Fecha de inicio" Grid.Row="0" Grid.Column="0" />
+                <Label Text="Fecha de inicio" Grid.Row="0" Grid.Column="0" Style="{StaticResource estiloEtiqueta}" />
                 <DatePicker x:Name="dpFechaInicio"
                             Grid.Row="0" Grid.Column="1"
                             Format="dd/MM/yyyy" />
 
-                <Label Text="Plan" Grid.Row="1" Grid.Column="0" />
+                <Label Text="Plan" Grid.Row="1" Grid.Column="0" Style="{StaticResource estiloEtiqueta}" />
                 <Picker x:Name="pkPlan"
                         Grid.Row="1" Grid.Column="1"
                         Title="Seleccione el plan">
@@ -61,13 +61,13 @@
                     </Picker.Items>
                 </Picker>
 
-                <Label Text="Casillero" Grid.Row="2" Grid.Column="0" />
+                <Label Text="Casillero" Grid.Row="2" Grid.Column="0" Style="{StaticResource estiloEtiqueta}" />
                 <Switch x:Name="swCasillero"
                         Grid.Row="2" Grid.Column="1"
                         HorizontalOptions="Start"
                         Toggled="swCasillero_Toggled" />
 
-                <Label Text="Monto Inicial" Grid.Row="3" Grid.Column="0" />
+                <Label Text="Monto Inicial" Grid.Row="3" Grid.Column="0" Style="{StaticResource estiloEtiqueta}" />
                 <Entry x:Name="txtMontoInicial"
                        Grid.Row="3" Grid.Column="1"
                        Placeholder="120 - 600"
@@ -77,7 +77,8 @@
                 <Button x:Name="btnCalcular"
                         Grid.Row="4" Grid.Column="0"
                         Text="Calcular Pago mensual"
-                        Clicked="btnCalcular_Clicked" />
+                        Clicked="btnCalcular_Clicked"
+                        Style="{StaticResource estiloBotonSecundario}" />
                 <Entry x:Name="txtPagoMensual"
                        Grid.Row="4" Grid.Column="1"
                        Placeholder="Pago mensual"
@@ -87,7 +88,8 @@
             <!--Fuera del Grid-->
             <Button x:Name="btnVerResumen"
                     Text="Ver Resumen"
-                    Clicked="btnVerResumen_Clicked" />
+                    Clicked="btnVerResumen_Clicked"
+                    Style="{StaticResource estiloBotonPrincipal}" />
 
         </VerticalStackLayout>
     </ScrollView>
