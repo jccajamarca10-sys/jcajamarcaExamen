@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jcajamarcaExamen.Views.vAcercaDe"
+             Title="Acerca de">
+    <ScrollView>
+        <VerticalStackLayout Spacing="20"
+                             Padding="20">
+
+            <Label Text="ACERCA DE"
+                   TextColor="Purple"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <Image Source="foto_estudiante.png"
+                   HeightRequest="150"
+                   HorizontalOptions="Center" />
+
+            <!--Grid 5 filas x 2 columnas: dato | valor-->
+            <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto"
+                  ColumnDefinitions="Auto,*"
+                  RowSpacing="12"
+                  ColumnSpacing="15">
+
+                <Label Text="Docente:" Grid.Row="0" Grid.Column="0" FontAttributes="Bold" />
+                <Label Text="PhD. Renato Mauricio Toasa Guachi" Grid.Row="0" Grid.Column="1" />
+
+                <Label Text="Estudiante:" Grid.Row="1" Grid.Column="0" FontAttributes="Bold" />
+                <Label Text="Juan Cajamarca" Grid.Row="1" Grid.Column="1" />
+
+                <Label Text="Asignatura:" Grid.Row="2" Grid.Column="0" FontAttributes="Bold" />
+                <Label Text="Desarrollo Para Aplicaciones Móviles" Grid.Row="2" Grid.Column="1" />
+
+                <Label Text="Carrera:" Grid.Row="3" Grid.Column="0" FontAttributes="Bold" />
+                <Label Text="Ingeniería Informática" Grid.Row="3" Grid.Column="1" />
+
+                <Label Text="Paralelo:" Grid.Row="4" Grid.Column="0" FontAttributes="Bold" />
+                <Label Text="A" Grid.Row="4" Grid.Column="1" />
+            </Grid>
+
+            <Button x:Name="btnRegresar"
+                    Text="Regresar al Login"
+                    Clicked="btnRegresar_Clicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

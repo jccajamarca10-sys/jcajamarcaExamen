@@ -1,0 +1,12 @@
+RESUMEN DEL SOCIO
+-----------------
+Usuario conectado: gerente
+Nombre: Juan
+Apellido: Cajamarca
+Edad: 37 años
+Fecha de inicio: 29/10/2026
+Plan: Full
+Casillero: Sí
+Monto Inicial: $ 300,00
+Pago mensual: $ 214,00
+Pago Total: $ 1370,00
